@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://192.168.0.30:3306/itty
     username: root
-    password: root
+    password: mariadb
   jpa:
     generate-ddl: false
     show-sql: true

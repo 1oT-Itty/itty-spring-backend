@@ -105,7 +105,7 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	/* 비밀번호 유효성 검사 */
-	private boolean validatePassword(UserEntity user, String inputUserPassword) {
+	public boolean validatePassword(UserEntity user, String inputUserPassword) {
 		String userPassword = user.getUserPassword();
 
 		if (bCryptPasswordEncoder.matches(inputUserPassword, userPassword)) {

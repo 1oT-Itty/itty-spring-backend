@@ -1,5 +1,8 @@
 package org.iot.itty.login.security;
 
+import java.util.Collections;
+import java.util.List;
+
 import org.iot.itty.login.jwt.JwtFilter;
 import org.iot.itty.login.jwt.JwtUtil;
 import org.iot.itty.login.redis.TokenRepository;
@@ -18,6 +21,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Configuration
 @EnableWebSecurity
@@ -51,6 +58,24 @@ public class WebSecurityConfig {
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
+		http.cors(httpSecurityCorsConfigurer -> httpSecurityCorsConfigurer.configurationSource(
+			new CorsConfigurationSource() {
+				@Override
+				public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
+					List<String> allowStringList = Collections.singletonList("*");
+					CorsConfiguration configuration = new CorsConfiguration();
+
+					configuration.setAllowedOriginPatterns(allowStringList);
+					configuration.setAllowedMethods(allowStringList);
+					configuration.setAllowedHeaders(allowStringList);
+					configuration.setAllowCredentials(true);
+					configuration.setMaxAge(3600L);
+
+					return configuration;
+				}
+			}
+		));
 
 		AuthenticationManagerBuilder authenticationManagerBuilder =
 			http.getSharedObject(AuthenticationManagerBuilder.class);
