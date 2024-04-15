@@ -9,6 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication
 public class IttyBackendApplication {
 
+	// main push test
 	public static void main(String[] args) {
 		SpringApplication.run(IttyBackendApplication.class, args);
 	}
