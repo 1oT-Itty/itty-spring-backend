@@ -1,0 +1,534 @@
+2024-04-15T11:36:53.238+0900 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=KR, -Duser.language=ko, -Duser.variant]
+2024-04-15T11:36:53.284+0900 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=138065bd-b971-4de5-bbea-d991baf3c4dd,javaHome=/Users/shindaeyeong/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.10/Contents/Home,daemonRegistryDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon,pid=5699,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun7
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:3179:1226:37ba:6204%utun7
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun6
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b06b:de5f:6f74:6fa0%utun6
+2024-04-15T11:36:53.301+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun5
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:913d:ba5f:3cd3:e846%utun5
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun4
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:25b4:6a67:7ff0:2fe2%utun4
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun3
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ce81:b1c:bd2c:69e%utun3
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun2
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:d914:aa02:ef97:2640%utun2
+2024-04-15T11:36:53.302+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun1
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a748:6fe0:2065:65e7%utun1
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:2f40:abfb:2cb1:8e13%utun0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface llw0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b078:c8ff:fe88:f06a%llw0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface awdl0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b078:c8ff:fe88:f06a%awdl0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:cf1:4e3e:d59d:2414%en0
+2024-04-15T11:36:53.303+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.0.66
+2024-04-15T11:36:53.304+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo0
+2024-04-15T11:36:53.304+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2024-04-15T11:36:53.304+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%lo0
+2024-04-15T11:36:53.304+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo0
+2024-04-15T11:36:53.304+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2024-04-15T11:36:53.306+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]].
+2024-04-15T11:36:53.307+0900 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Mon Apr 15 11:36:53 KST 2024, with address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:36:53.307+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:36:53.307+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=138065bd-b971-4de5-bbea-d991baf3c4dd,javaHome=/Users/shindaeyeong/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.10/Contents/Home,daemonRegistryDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon,pid=5699,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+2024-04-15T11:36:53.307+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=138065bd-b971-4de5-bbea-d991baf3c4dd,javaHome=/Users/shindaeyeong/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.10/Contents/Home,daemonRegistryDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon,pid=5699,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+2024-04-15T11:36:53.314+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:36:53.316+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:36:53.318+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:36:53.318+0900 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2024-04-15T11:36:53.318+0900 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2024-04-15T11:36:53.320+0900 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2024-04-15T11:36:53.320+0900 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2024-04-15T11:36:53.320+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:36:53.322+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59183 to /127.0.0.1:59182.
+2024-04-15T11:36:53.343+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.Build
+2024-04-15T11:36:53.343+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 21: Received non-IO message from client: Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}
+2024-04-15T11:36:53.344+0900 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}.
+2024-04-15T11:36:53.344+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend} with connection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59183.
+2024-04-15T11:36:53.345+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59183] after 0.0 minutes of idle
+2024-04-15T11:36:53.345+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:36:53.345+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:36:53.345+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:36:53.345+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:36:53.346+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:36:53.346+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2024-04-15T11:36:53.346+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:36:53.346+0900 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}. Dispatching build started information...
+2024-04-15T11:36:53.346+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@2b36a632
+2024-04-15T11:36:53.347+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, MANPATH, HOMEBREW_PREFIX, COMMAND_MODE, LOGNAME, HOMEBREW_REPOSITORY, XPC_SERVICE_NAME, INFOPATH, __CFBundleIdentifier, SHELL, PAGER, LSCOLORS, OLDPWD, HOMEBREW_CELLAR, USER, ZSH, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LESS, LC_CTYPE, LS_COLORS, IDEA_INITIAL_DIRECTORY, HOME]
+2024-04-15T11:36:53.348+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2024-04-15T11:36:53.348+0900 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5699). The daemon log file: /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon/8.7/daemon-5699.out.log
+2024-04-15T11:36:53.349+0900 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 512 MiB]
+2024-04-15T11:36:53.349+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2024-04-15T11:36:53.350+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=138065bd-b971-4de5-bbea-d991baf3c4dd,javaHome=/Users/shindaeyeong/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.10/Contents/Home,daemonRegistryDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon,pid=5699,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/test/java/org/iot/itty/article/controller/ArticleControllerTests.java:20: error: cannot find symbol
+import org.iot.itty.config.CustomMapper;
+                          ^
+  symbol:   class CustomMapper
+  location: package org.iot.itty.config
+1 error
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Build cancelled while executing task ':compileTestJava'
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s
+3 actionable tasks: 3 executed
+2024-04-15T11:36:57.939+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2024-04-15T11:36:57.949+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Cancel: daemon is busy, sleeping until state changes.
+2024-04-15T11:36:57.949+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59183]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4a2696c5 with state Canceled
+2024-04-15T11:36:57.949+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59183]
+2024-04-15T11:36:57.949+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2024-04-15T11:36:57.949+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:36:57.949+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:36:57.950+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:36:57.950+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:36:57.950+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:36:57.951+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Cancel: daemon is idle now.
+2024-04-15T11:36:57.951+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:36:57.951+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@5c6ad599]
+2024-04-15T11:36:57.951+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@5c6ad599]
+2024-04-15T11:36:57.954+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2024-04-15T11:36:57.954+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=1462f55b-cb89-4ffe-b49e-f2855fa54038, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}
+2024-04-15T11:36:57.959+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received class org.gradle.launcher.daemon.protocol.Finished
+2024-04-15T11:36:57.959+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 21: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@5871249c
+2024-04-15T11:36:57.959+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@5871249c
+2024-04-15T11:36:57.959+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: stopping connection
+2024-04-15T11:36:57.959+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2024-04-15T11:36:57.960+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: received null
+2024-04-15T11:36:57.960+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 21: Received end-of-input from client.
+2024-04-15T11:36:57.961+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: stopping connection
+2024-04-15T11:37:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:06.686+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/test/java/org/iot/itty/article/controller/ArticleControllerTests.java
+2024-04-15T11:37:06.758+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59184 to /127.0.0.1:59182.
+2024-04-15T11:37:06.761+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 183: received class org.gradle.launcher.daemon.protocol.InvalidateVirtualFileSystemAfterChange
+2024-04-15T11:37:06.761+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 183: Received non-IO message from client: InvalidateVirtualFileSystemAfterChange[id=662e2840-0184-4f47-9ed1-dfc1f0af370c]
+2024-04-15T11:37:06.761+0900 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: InvalidateVirtualFileSystemAfterChange[id=662e2840-0184-4f47-9ed1-dfc1f0af370c].
+2024-04-15T11:37:06.761+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: InvalidateVirtualFileSystemAfterChange[id=662e2840-0184-4f47-9ed1-dfc1f0af370c] with connection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59184.
+2024-04-15T11:37:06.762+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59185 to /127.0.0.1:59182.
+2024-04-15T11:37:06.762+0900 [INFO] [org.gradle.launcher.daemon.server.api.HandleInvalidateVirtualFileSystem] Invalidating [/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/test/java/org/iot/itty/article/controller/ArticleControllerTests.java]
+2024-04-15T11:37:06.762+0900 [DEBUG] [org.gradle.internal.vfs.impl.AbstractVirtualFileSystem] Invalidating VFS paths: [/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/test/java/org/iot/itty/article/controller/ArticleControllerTests.java]
+2024-04-15T11:37:06.762+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: dispatching Success[value=null]
+2024-04-15T11:37:06.762+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: InvalidateVirtualFileSystemAfterChange[id=662e2840-0184-4f47-9ed1-dfc1f0af370c]
+2024-04-15T11:37:06.763+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 183: received class org.gradle.launcher.daemon.protocol.Finished
+2024-04-15T11:37:06.763+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 183: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@71f9f98e
+2024-04-15T11:37:06.763+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@71f9f98e
+2024-04-15T11:37:06.763+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: stopping connection
+2024-04-15T11:37:06.764+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 185: received class org.gradle.launcher.daemon.protocol.Build
+2024-04-15T11:37:06.764+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2024-04-15T11:37:06.764+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 183: received null
+2024-04-15T11:37:06.764+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 183: Received end-of-input from client.
+2024-04-15T11:37:06.764+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 185: Received non-IO message from client: Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}
+2024-04-15T11:37:06.765+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: stopping connection
+2024-04-15T11:37:06.765+0900 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}.
+2024-04-15T11:37:06.765+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend} with connection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59185.
+2024-04-15T11:37:06.765+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59185] after 0.0 minutes of idle
+2024-04-15T11:37:06.765+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:06.765+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:06.766+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:37:06.766+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:06.766+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:06.766+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2024-04-15T11:37:06.766+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:37:06.766+0900 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}. Dispatching build started information...
+2024-04-15T11:37:06.766+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@4c193aad
+2024-04-15T11:37:06.767+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, MANPATH, HOMEBREW_PREFIX, COMMAND_MODE, LOGNAME, HOMEBREW_REPOSITORY, XPC_SERVICE_NAME, INFOPATH, __CFBundleIdentifier, SHELL, PAGER, LSCOLORS, OLDPWD, HOMEBREW_CELLAR, USER, ZSH, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LESS, LC_CTYPE, LS_COLORS, IDEA_INITIAL_DIRECTORY, HOME]
+2024-04-15T11:37:06.767+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2024-04-15T11:37:06.767+0900 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5699). The daemon log file: /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon/8.7/daemon-5699.out.log
+2024-04-15T11:37:06.771+0900 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 13.508 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 18% of 384 MiB]
+2024-04-15T11:37:06.771+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2024-04-15T11:37:06.771+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=138065bd-b971-4de5-bbea-d991baf3c4dd,javaHome=/Users/shindaeyeong/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.10/Contents/Home,daemonRegistryDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon,pid=5699,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+ArticleControllerTests > 작성자별 자유게시글 리스트 조회 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+
+ArticleControllerTests > 자유게시판 게시글 수정 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+
+ArticleControllerTests > 자유게시글 한개 조회 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+
+ArticleControllerTests > 자유게시판 게시글 등록 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+2024-04-15T11:37:18.253+09:00  INFO 5740 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+4 tests completed, 4 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/shindaeyeong/Documents/MacBook%C2%A0Pro_Documents/itty_4rd_project/itty-spring-backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.7/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 11s
+4 actionable tasks: 2 executed, 2 up-to-date
+2024-04-15T11:37:18.333+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2024-04-15T11:37:18.344+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59185]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4a2696c5 with state Busy
+2024-04-15T11:37:18.344+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59185]
+2024-04-15T11:37:18.344+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2024-04-15T11:37:18.344+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:18.344+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:18.345+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:37:18.345+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:18.345+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:18.345+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@19f7c0fc]
+2024-04-15T11:37:18.345+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:37:18.346+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@19f7c0fc]
+2024-04-15T11:37:18.346+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2024-04-15T11:37:18.346+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=e5b34b66-318d-4be9-8557-07d419338935, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}
+2024-04-15T11:37:18.347+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 185: received class org.gradle.launcher.daemon.protocol.CloseInput
+2024-04-15T11:37:18.347+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 185: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@16556090
+2024-04-15T11:37:18.347+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 185: received class org.gradle.launcher.daemon.protocol.Finished
+2024-04-15T11:37:18.347+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 185: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@18929c2a
+2024-04-15T11:37:18.348+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@18929c2a
+2024-04-15T11:37:18.348+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2024-04-15T11:37:18.348+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: stopping connection
+2024-04-15T11:37:18.348+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 185: received null
+2024-04-15T11:37:18.348+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 185: Received end-of-input from client.
+2024-04-15T11:37:18.348+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: stopping connection
+2024-04-15T11:37:18.356+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/test-results/test/binary/output.bin.idx
+2024-04-15T11:37:18.357+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/test-results/test/binary/results.bin
+2024-04-15T11:37:18.357+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/test-results/test/TEST-org.iot.itty.article.controller.ArticleControllerTests.xml
+2024-04-15T11:37:18.369+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/reports/tests/test/packages/org.iot.itty.article.controller.html
+2024-04-15T11:37:18.369+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/reports/tests/test/index.html
+2024-04-15T11:37:23.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:23.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:23.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:23.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:23.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:23.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:33.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:43.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:43.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:49.676+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/main/resources/application.yml
+2024-04-15T11:37:49.710+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59197 to /127.0.0.1:59182.
+2024-04-15T11:37:49.711+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 343: received class org.gradle.launcher.daemon.protocol.InvalidateVirtualFileSystemAfterChange
+2024-04-15T11:37:49.711+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 343: Received non-IO message from client: InvalidateVirtualFileSystemAfterChange[id=adddc023-b5b9-472e-b17b-c556af0a9ffe]
+2024-04-15T11:37:49.711+0900 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: InvalidateVirtualFileSystemAfterChange[id=adddc023-b5b9-472e-b17b-c556af0a9ffe].
+2024-04-15T11:37:49.711+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: InvalidateVirtualFileSystemAfterChange[id=adddc023-b5b9-472e-b17b-c556af0a9ffe] with connection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59197.
+2024-04-15T11:37:49.711+0900 [INFO] [org.gradle.launcher.daemon.server.api.HandleInvalidateVirtualFileSystem] Invalidating [/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/main/resources/application.yml]
+2024-04-15T11:37:49.711+0900 [DEBUG] [org.gradle.internal.vfs.impl.AbstractVirtualFileSystem] Invalidating VFS paths: [/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/main/resources/application.yml]
+2024-04-15T11:37:49.711+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: dispatching Success[value=null]
+2024-04-15T11:37:49.711+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: InvalidateVirtualFileSystemAfterChange[id=adddc023-b5b9-472e-b17b-c556af0a9ffe]
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 343: received class org.gradle.launcher.daemon.protocol.Finished
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 343: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@637cada0
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@637cada0
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: stopping connection
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 343: received null
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 343: Received end-of-input from client.
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: stopping connection
+2024-04-15T11:37:49.712+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59198 to /127.0.0.1:59182.
+2024-04-15T11:37:49.713+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 344: received class org.gradle.launcher.daemon.protocol.Build
+2024-04-15T11:37:49.713+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 344: Received non-IO message from client: Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}
+2024-04-15T11:37:49.713+0900 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}.
+2024-04-15T11:37:49.713+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend} with connection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59198.
+2024-04-15T11:37:49.713+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59198] after 0.0 minutes of idle
+2024-04-15T11:37:49.714+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:37:49.714+0900 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}. Dispatching build started information...
+2024-04-15T11:37:49.714+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 23: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@1220535c
+2024-04-15T11:37:49.715+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, MANPATH, HOMEBREW_PREFIX, COMMAND_MODE, LOGNAME, HOMEBREW_REPOSITORY, XPC_SERVICE_NAME, INFOPATH, __CFBundleIdentifier, SHELL, PAGER, LSCOLORS, OLDPWD, HOMEBREW_CELLAR, USER, ZSH, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LESS, LC_CTYPE, LS_COLORS, IDEA_INITIAL_DIRECTORY, HOME]
+2024-04-15T11:37:49.715+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2024-04-15T11:37:49.715+0900 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5699). The daemon log file: /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon/8.7/daemon-5699.out.log
+2024-04-15T11:37:49.715+0900 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 3rd build in daemon [uptime: 56.456 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 21% of 384 MiB]
+2024-04-15T11:37:49.715+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2024-04-15T11:37:49.715+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=138065bd-b971-4de5-bbea-d991baf3c4dd,javaHome=/Users/shindaeyeong/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.10/Contents/Home,daemonRegistryDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/daemon,pid=5699,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+ArticleControllerTests > 작성자별 자유게시글 리스트 조회 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+
+ArticleControllerTests > 자유게시판 게시글 수정 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+
+ArticleControllerTests > 자유게시글 한개 조회 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+
+ArticleControllerTests > 자유게시판 게시글 등록 테스트 FAILED
+    org.springframework.transaction.CannotCreateTransactionException at JpaTransactionManager.java:466
+        Caused by: org.hibernate.exception.JDBCConnectionException at SQLExceptionTypeDelegate.java:51
+            Caused by: java.sql.SQLNonTransientConnectionException at ConnectionHelper.java:140
+                Caused by: java.net.ConnectException at Net.java:-2
+2024-04-15T11:37:59.716+09:00  INFO 5771 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+4 tests completed, 4 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/shindaeyeong/Documents/MacBook%C2%A0Pro_Documents/itty_4rd_project/itty-spring-backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.7/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 10s
+4 actionable tasks: 2 executed, 2 up-to-date
+2024-04-15T11:37:59.778+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2024-04-15T11:37:59.784+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:37:59.784+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59198]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4a2696c5 with state Busy
+2024-04-15T11:37:59.785+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59182 to /127.0.0.1:59198]
+2024-04-15T11:37:59.785+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2024-04-15T11:37:59.785+0900 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:59.785+0900 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [60b295d3-5cb8-4f02-b6fb-ce9e4df25e5e port:59182, addresses:[localhost/127.0.0.1]]
+2024-04-15T11:37:59.785+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2024-04-15T11:37:59.785+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:37:59.785+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:37:59.786+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@2cddf25a]
+2024-04-15T11:37:59.786+0900 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2024-04-15T11:37:59.786+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@2cddf25a]
+2024-04-15T11:37:59.786+0900 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2024-04-15T11:37:59.786+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=fca5fcf5-0a39-4c57-bb45-f6e11951c032, currentDir=/Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend}
+2024-04-15T11:37:59.787+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 344: received class org.gradle.launcher.daemon.protocol.CloseInput
+2024-04-15T11:37:59.787+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 344: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@596c3e06
+2024-04-15T11:37:59.787+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 344: received class org.gradle.launcher.daemon.protocol.Finished
+2024-04-15T11:37:59.788+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 344: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@57abdb5b
+2024-04-15T11:37:59.788+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@57abdb5b
+2024-04-15T11:37:59.788+0900 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2024-04-15T11:37:59.788+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: stopping connection
+2024-04-15T11:37:59.788+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 344: received null
+2024-04-15T11:37:59.788+0900 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 344: Received end-of-input from client.
+2024-04-15T11:37:59.789+0900 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 184: stopping connection
+2024-04-15T11:37:59.806+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/test-results/test/binary/output.bin.idx
+2024-04-15T11:37:59.806+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/test-results/test/binary/results.bin
+2024-04-15T11:37:59.807+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/test-results/test/binary/output.bin
+2024-04-15T11:37:59.959+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/reports/tests/test/packages/org.iot.itty.article.controller.html
+2024-04-15T11:37:59.959+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/build/reports/tests/test/classes/org.iot.itty.article.controller.ArticleControllerTests.html
+2024-04-15T11:38:03.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:03.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:13.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:13.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:13.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:13.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:19.043+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend/src/main/java/org
+2024-04-15T11:38:19.090+0900 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend
+2024-04-15T11:38:19.090+0900 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Not watching anything anymore
+2024-04-15T11:38:19.091+0900 [DEBUG] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Watching 0 directory hierarchies to track changes
+2024-04-15T11:38:19.091+0900 [DEBUG] [org.gradle.internal.watch.registry.impl.DefaultFileWatcherProbeRegistry] Watch probe has already been triggered for hierarchy: /Users/shindaeyeong/Documents/MacBook Pro_Documents/itty_4rd_project/itty-spring-backend
+2024-04-15T11:38:23.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:23.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:23.329+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:23.330+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:23.330+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:23.331+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:23.331+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:23.331+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:23.331+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:33.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:43.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:53.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:53.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:53.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:53.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:53.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:53.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:38:53.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:38:53.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:38:53.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:03.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:03.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:03.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:03.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:13.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:13.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:13.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:13.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:13.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:13.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:13.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:13.328+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:23.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:23.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:23.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:23.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:23.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:23.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:23.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:23.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:23.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:33.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:33.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:33.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:33.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:33.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:43.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:43.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:43.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:43.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:43.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:43.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:53.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:53.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:53.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:53.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:53.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:53.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:39:53.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:39:53.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:39:53.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:03.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:03.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:03.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:03.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:03.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:03.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:03.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:03.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:13.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:13.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:13.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:13.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:13.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:13.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:13.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:13.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:23.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:23.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:23.327+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:23.328+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:23.328+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:23.329+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:23.329+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:23.330+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:23.330+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:33.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:33.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:33.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:33.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:33.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:33.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:33.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:33.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:43.321+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:43.322+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:43.323+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:43.324+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2024-04-15T11:40:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2024-04-15T11:40:43.325+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2024-04-15T11:40:43.326+0900 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
