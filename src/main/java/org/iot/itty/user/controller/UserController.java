@@ -24,6 +24,7 @@ import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -40,6 +41,7 @@ public class UserController {
 	private final ReplyService replyService;
 	private final LikeService likeService;
 	private final ScrapService scrapService;
+	private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@Autowired
 	public UserController(
@@ -48,7 +50,8 @@ public class UserController {
 		ArticleService articleService,
 		ReplyService replyService,
 		LikeService likeService,
-		ScrapService scrapService
+		ScrapService scrapService,
+		BCryptPasswordEncoder bCryptPasswordEncoder
 	)
 	{
 		this.modelMapper = modelMapper;
@@ -57,6 +60,7 @@ public class UserController {
 		this.replyService = replyService;
 		this.likeService = likeService;
 		this.scrapService = scrapService;
+		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 	}
 
 	/* 회원별 회원정보 조회 */
