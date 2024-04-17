@@ -51,7 +51,7 @@ public class ArticleController {
 	}
 
 	/* 자유게시판 전체조회 */
-	@GetMapping("/article/bulletin")
+	// @GetMapping("/article/bulletin")
 	public ResponseEntity<List<ResponseSelectAllFreeBoardArticle>> selectAllBulletinArticle() {
 		List<ArticleDTO> articleDTOList = articleService.selectAllArticleFromFreeBoard();
 
